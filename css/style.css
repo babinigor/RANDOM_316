@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   font-family: "montserrat", sans-serif;
   color: #fffef6;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 video {
@@ -47,7 +52,7 @@ main h1 {
   font-size: 100px;
   margin-top: 50px;
   margin-bottom: 20px;
-  color: #fffef6;
+  color: rgb(255, 254, 246, 0.9);
 }
 
 main button {
@@ -59,15 +64,15 @@ main button {
   border: none;
   transition: all 0.3s ease;
   background: rgb(255, 254, 246, 0.3);
-  /* background-color: rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(10px);
-  color: #13100f;
+  color: rgb(255, 255, 237, 0.8);
   font-weight: 800;
 }
 
 main button:hover {
-  background: #b9b7a6;
+  background: rgb(185, 183, 166, 0.8);
   cursor: pointer;
+  transform: scale(1.02);
 }
 
 main button:active {
@@ -85,13 +90,14 @@ main button:active {
   transition: all 0.3s ease;
   background: rgb(255, 254, 246, 0.3);
   backdrop-filter: blur(10px);
-  color: black;
+  color: rgb(0, 0, 0, 0.8);
   font-weight: 700;
 }
 
 .inputs input:hover {
-  background: #b9b7a6;
+  background: rgb(185, 183, 166, 0.8);
   cursor: pointer;
+  transform: scale(1.02);
 }
 
 .inputs input:active {
@@ -117,4 +123,5 @@ main button:active {
   margin: auto auto;
   top: 39%;
   font-family: "Ubuntu Sans Mono", monospace;
+  color: rgb(255, 255, 237);
 }
