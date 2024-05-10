@@ -53,6 +53,10 @@ main h1 {
   margin-top: 50px;
   margin-bottom: 20px;
   color: rgb(255, 254, 246, 0.9);
+  background: rgb(255, 254, 246, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 10px 50px;
 }
 
 main button {
@@ -70,13 +74,13 @@ main button {
 }
 
 main button:hover {
-  background: rgb(185, 183, 166, 0.8);
+  background: rgba(211, 209, 190, 0.5);
   cursor: pointer;
   transform: scale(1.02);
 }
 
 main button:active {
-  background: #999680;
+  background: rgb(153, 150, 128, 0.7);
   transform: scale(0.98);
 }
 
@@ -95,7 +99,7 @@ main button:active {
 }
 
 .inputs input:hover {
-  background: rgb(185, 183, 166, 0.8);
+  background: rgba(211, 209, 190, 0.5);
   cursor: pointer;
   transform: scale(1.02);
 }
@@ -110,8 +114,8 @@ main button:active {
 }
 
 .inputs input:disabled {
-  background: #fffce2;
-  opacity: 0.3;
+  background: rgb(255, 252, 226, 0.1);
+  /* opacity: 0.3; */
   cursor: not-allowed;
 }
 
