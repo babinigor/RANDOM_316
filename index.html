@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RANDOM</title>
+    <link rel="stylesheet" href="css/style.css" />   
+  </head>
+  <body>
+    <video
+      id="video"
+      autoplay
+      loop
+      muted
+      src="public/1.mp4"
+    ></video>
+    <main>     
+      <p id="result" class="result">0</p>
+      <div class="container">
+        <h1>3:16</h1>
+        <div>
+          <button onclick="clickHandler()">СГЕНЕРИРОВАТЬ</button>
+        
+          <div class="inputs">
+            <input
+              placeholder="Минимальное число"
+              type="number"
+              id="min"
+              min="1"
+            />
+            <input
+              placeholder="Максимальное число"
+              type="number"
+              id="max"
+              min="1"
+            />
+          </div>
+          
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
