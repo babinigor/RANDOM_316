@@ -58,7 +58,9 @@ main button {
   outline: none;
   border: none;
   transition: all 0.3s ease;
-  background: #fffef6;
+  background: rgb(255, 254, 246, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(10px);
   color: #13100f;
   font-weight: 800;
 }
@@ -81,7 +83,8 @@ main button:active {
   outline: none;
   border: none;
   transition: all 0.3s ease;
-  background: #fffef6;
+  background: rgb(255, 254, 246, 0.3);
+  backdrop-filter: blur(10px);
   color: black;
   font-weight: 700;
 }
