@@ -20,6 +20,7 @@ video {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+  margin: auto;
 }
 
 body,
@@ -28,42 +29,45 @@ html {
   padding: 0;
 }
 
-main {
-  width: 65%;
+.container {
   height: 100vh;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   text-align: center;
   border-radius: 3px;
-}
-
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding-bottom: 50px;
 }
 
 main h1 {
   font-size: 100px;
-  margin-top: 50px;
-  margin-bottom: 20px;
   color: rgb(255, 254, 246, 0.9);
   background: rgb(255, 254, 246, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 5px;
-  padding: 10px 50px;
+  margin-top: 3%;
   transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+
+.inputs_group {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
 }
 
 main button {
   padding: 10px 20px;
   font-size: 20px;
-  margin: 10px;
+  margin: 10bpx;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -72,6 +76,7 @@ main button {
   backdrop-filter: blur(10px);
   color: rgb(255, 255, 237, 0.8);
   font-weight: 800;
+  grid-area: 1/1/3/3;
 }
 
 main button:hover {
@@ -85,10 +90,9 @@ main button:active {
   transform: scale(0.98);
 }
 
-.inputs input {
+.inputs_group input {
   padding: 10px 20px;
   font-size: 20px;
-  margin: 10px;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -99,22 +103,22 @@ main button:active {
   font-weight: 700;
 }
 
-.inputs input:hover {
+.inputs_group input:hover {
   background: rgba(211, 209, 190, 0.5);
   cursor: pointer;
   transform: scale(1.02);
 }
 
-.inputs input:active {
+.inputs_group input:active {
   background: #999680;
   transform: scale(0.98);
 }
 
-.inputs input:focus {
+.inputs_group input:focus {
   background: #b9b7a6;
 }
 
-.inputs input:disabled {
+.inputs_group input:disabled {
   background: rgb(255, 252, 226, 0.1);
   /* opacity: 0.3; */
   cursor: not-allowed;
@@ -124,9 +128,50 @@ main button:active {
   font-size: 150px;
   font-weight: 700;
   transition: all 0.3s ease;
-  position: absolute;
+  /* position: absolute; */
   margin: auto auto;
-  top: 39%;
+  /* top: 39%; */
   font-family: "Ubuntu Sans Mono", monospace;
   color: rgb(255, 255, 237);
+}
+
+@media (max-width: 960px) {
+  main h1 {
+    font-size: 60px;
+  }
+
+  .inputs_group {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  main h1 {
+    margin-top: 10%;
+  }
+
+  main button {
+    grid-area: 1/1/1/1;
+  }
+
+  .inputs_group {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  main h1 {
+    font-size: 40px;
+    margin-bottom: 9%;
+    margin-top: 13%;
+  }
+
+  .result {
+    font-size: 100px;
+  }
 }
