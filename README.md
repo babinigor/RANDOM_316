@@ -2,7 +2,7 @@
 ## TO SEE THE RESULT, TAP ON THE PICTURE 👆
 
 <a href="https://babinigor.github.io/RANDOM_316/"><img src="https://github.com/user-attachments/assets/edd2ce0f-b9f7-4272-af79-14d432bd1794"/></a>
-<a href="https://babinigor.github.io/RANDOM_316/" style="width: 100px"><img src="https://github.com/user-attachments/assets/5ffedfc3-d9fe-40cf-9587-b486834db558"/></a>
+<a href="https://babinigor.github.io/RANDOM_316/" style="height: 100px"><img src="https://github.com/user-attachments/assets/5ffedfc3-d9fe-40cf-9587-b486834db558"/></a>
 
 ## How to use
 The project demonstrates the possibilities of using React.
